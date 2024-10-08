@@ -19,10 +19,25 @@ const PeerConnection =(function(){
                     urls:"stun:stun.l.google.com:19302"
                 },
                 {
-                    urls: 'turn:numb.viagenie.ca',
-                    username: 'webrtc@live.com',
-                    credential: 'muazkh'
-                }
+                    urls: "turn:global.relay.metered.ca:80",
+                    username: "3c4b081c96e393e2fb87aa17",
+                    credential: "tbbGHYb3yJmyEUXX",
+                  },
+                  {
+                    urls: "turn:global.relay.metered.ca:80?transport=tcp",
+                    username: "3c4b081c96e393e2fb87aa17",
+                    credential: "tbbGHYb3yJmyEUXX",
+                  },
+                  {
+                    urls: "turn:global.relay.metered.ca:443",
+                    username: "3c4b081c96e393e2fb87aa17",
+                    credential: "tbbGHYb3yJmyEUXX",
+                  },
+                  {
+                    urls: "turns:global.relay.metered.ca:443?transport=tcp",
+                    username: "3c4b081c96e393e2fb87aa17",
+                    credential: "tbbGHYb3yJmyEUXX",
+                  },
             ]
         };
         peerConnection = new RTCPeerConnection(config);
